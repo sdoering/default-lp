@@ -1,6 +1,6 @@
-service: wbnk
+service: defaultlp
 
-image: sdoering/vml-huephoria
+image: sdoering/vdefaul-lp
 
 servers:
   web:
@@ -8,8 +8,12 @@ servers:
 
 proxy:
   ssl: true
-  host: wbnk.one
-  app_port: 5002
+  hosts:
+    - ein-mensch.net
+    - moorbekstrasse.de
+    - moorbekstraße.de
+    - xn--moorbekstrae-v9a.de
+  app_port: 5003
 
 registry:
   server: ghcr.io
