@@ -1,0 +1,22 @@
+service: wbnk
+
+image: sdoering/vml-huephoria
+
+servers:
+  web:
+    - 116.203.36.121
+
+proxy:
+  ssl: true
+  host: wbnk.one
+  app_port: 5002
+
+registry:
+  server: ghcr.io
+  username:
+    - DOCKER_REGISTRY_TOKEN
+  password:
+    - DOCKER_REGISTRY_TOKEN
+
+builder:
+  arch: amd64
