@@ -48,6 +48,7 @@ h1 {
     font-family: Arial, sans-serif;
     /* make the font responsive 80% width of the screen*/
     font-size: 15vw;
+    margin-left: 10%;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.2em;
